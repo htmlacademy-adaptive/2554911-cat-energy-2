@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Дарин Мимех](https://up.htmlacademy.ru/adaptive-individual/2/user/2554911).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://up.htmlacademy.ru/adaptive-individual/2/user/2554911).
 
 ---
 
