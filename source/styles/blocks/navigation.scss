@@ -1,0 +1,33 @@
+.navigation {
+  //
+}
+
+.navigation__logo {
+  //
+}
+
+.navigation__list {
+  list-style-type: none;
+}
+
+.navigation__item {
+  //
+}
+
+.navigation__link {
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $color-text-accent;
+  text-decoration: none;
+}
+
+.navigation__link--current {
+  //
+}
+
+.navigation__menu-button {
+  //
+}

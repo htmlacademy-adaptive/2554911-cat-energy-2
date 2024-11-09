@@ -1,0 +1,24 @@
+.address {
+  background-color: $color-light;
+}
+
+.address--dark {
+  background-color: $color-basic;
+}
+
+.address__title {
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: $color-text-accent-2;
+}
+
+.address__text {
+  line-height: 1.25;
+}
+
+.address__location {
+  //
+}

@@ -1,0 +1,31 @@
+.hero {
+  font-family: $font-second;
+  font-weight: 400;
+  text-align: center;
+  color: $color-light;
+}
+
+.hero__container {
+  background-color: $color-accent;
+}
+
+.hero__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.hero__text {
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.hero__image {
+  //
+}
+
+.hero__button {
+  font-size: 16px;
+  line-height: 1.25;
+}

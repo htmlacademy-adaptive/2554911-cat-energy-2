@@ -13,7 +13,7 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
+<body>
   <header class="page-header">
     <div class="container">
       <nav class="navigation">
@@ -40,17 +40,21 @@
   <main class="page-main">
     <section class="hero">
       <div class="container">
-        <h1 class="hero__title">
-          Функциональное питание для котов
-        </h1>
-        <p class="hero__text">
-          Занялся собой? Займись котом!
-        </p>
-        <picture>
-          <source type="image/png" media="(min-width: 1440px)" srcset="images/index-promo-desktop@1x.png 1x, images/index-promo-desktop@2x.png 2x" width="552" height="499">
-          <source type="image/png" media="(min-width: 768px)" srcset="images/index-promo-tablet@1x.png 1x, images/index-promo-tablet@2x.png 2x" width="709" height="609">
-          <img class="hero__image" src="images/index-promo-mobile@1x.png" srcset="images/index-promo-mobile@2x.png 2x" alt="Cat Energy Pro с курицей" width="280" height="270">
-        </picture>
+        <div class="hero__container">
+          <h1 class="hero__title">
+            Функциональное питание для котов
+          </h1>
+          <p class="hero__text">
+            Занялся собой? Займись котом!
+          </p>
+        </div>
+        <div>
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/index-promo-desktop@1x.png 1x, images/index-promo-desktop@2x.png 2x" width="552" height="499">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/index-promo-tablet@1x.png 1x, images/index-promo-tablet@2x.png 2x" width="709" height="609">
+            <img class="hero__image" src="images/index-promo-mobile@1x.png" srcset="images/index-promo-mobile@2x.png 2x" alt="Cat Energy Pro с курицей" width="280" height="270">
+          </picture>
+        </div>
         <a class="hero__button button button--primary" href="#">
           Подобрать программу
         </a>
@@ -103,20 +107,22 @@
             <dt class="experience__data-parameter">Затрачено времени</dt>
             <dd class="experience__data-result">60 дней</dd>
           </dl>
-          <span class="experience__costs-title">Затраты на питание:</span>
-          <span class="experience__costs-text">15&nbsp;000&nbsp;руб.</span>
+          <div class="experience__costs">
+            <span class="experience__costs-title">Затраты на питание:</span>
+            <span class="experience__costs-text">15&nbsp;000&nbsp;руб.</span>
+          </div>
         </div>
         <div class="experience__demo demo">
 
           <picture>
-            <source type="image/jpg" media="(min-width: 1440px)" srcset="images/state-before-desktop@1x.jpg 1x, images/state-before-desktop@2x.jpg 2x" width="560" height="512">
-            <source type="image/jpg" media="(min-width: 768px)" srcset="images/state-before-tablet@1x.jpg 1x, images/state-before-tablet@2x.jpg 2x" width="560" height="512">
-            <img class="demo__image" src="images/state-before-mobile@1x.jpg" srcset="images/state-before-mobile@2x.jpg 2x" width="280" height="256" alt="Демонстрация кота до">
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/state-before-desktop@1x.png 1x, images/state-before-desktop@2x.png 2x" width="560" height="512">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/state-before-tablet@1x.png 1x, images/state-before-tablet@2x.png 2x" width="560" height="512">
+            <img class="demo__image" src="images/state-before-mobile@1x.png" srcset="images/state-before-mobile@2x.png 2x" width="280" height="256" alt="Демонстрация кота до">
           </picture>
           <picture>
-            <source type="image/jpg" media="(min-width: 1440px)" srcset="images/state-after-desktop@1x.jpg 1x, images/state-after-desktop@2x.jpg 2x" width="560" height="512">
-            <source type="image/jpg" media="(min-width: 768px)" srcset="images/state-after-tablet@1x.jpg 1x, images/state-after-tablet@2x.jpg 2x" width="560" height="512">
-            <img class="demo__image" src="images/state-after-mobile@1x.jpg" srcset="images/state-after-mobile@2x.jpg 2x" width="280" height="256" alt="Демонстрация кота после">
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/state-after-desktop@1x.png 1x, images/state-after-desktop@2x.png 2x" width="560" height="512">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/state-after-tablet@1x.png 1x, images/state-after-tablet@2x.png 2x" width="560" height="512">
+            <img class="demo__image" src="images/state-after-mobile@1x.png" srcset="images/state-after-mobile@2x.png 2x" width="280" height="256" alt="Демонстрация кота после">
           </picture>
         </div>
       </div>
@@ -136,7 +142,7 @@
           </picture>
         </div>
       </section>
-      <a class="footer-logo logo" href="./index.html">
+      <a class="logo" href="./index.html">
         <img class="logo__image" src="#" alt="Логотип сайта" width="128" height="24">
       </a>
       <section class="social">
@@ -159,8 +165,8 @@
           </li>
         </ul>
       </section>
-      <a class="dev-logo-link" href="#">
-        <span class="dev-logo-link__title">HTML Academy</span>
+      <a class="developer" href="#">
+        <span class="developer__title">HTML Academy</span>
       </a>
     </div>
   </footer>
