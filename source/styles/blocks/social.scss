@@ -3,7 +3,7 @@
 }
 
 .social__list {
-  //
+  list-style-type: none;
 }
 
 .social__item {
@@ -11,17 +11,46 @@
 }
 
 .social__link {
-  //
-}
+  &--vk::before {
+    display: block;
+    content: "";
+    width: 27px;
+    height: 17px;
+    mask-image: url("../../icons/stack.svg#vk-icon");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-color: $color-brand;
+  }
 
-.social__link--vk {
-  //
-}
+  &--youtube::before {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 19px;
+    mask-image: url("../../icons/stack.svg#youtube-icon");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-color: $color-brand;
+  }
 
-.social__link--youtube {
-  //
-}
+  &--telegram::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 17px;
+    mask-image: url("../../icons/stack.svg#telegram-icon");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-color: $color-brand;
+  }
 
-.social__link--telegram {
-  //
+  &:hover::before,
+  &:focus::before {
+    background-color: $color-accent;
+  }
+
+  &:active::before {
+    background-color: $color-accent;
+    opacity: 0.3;
+  }
 }

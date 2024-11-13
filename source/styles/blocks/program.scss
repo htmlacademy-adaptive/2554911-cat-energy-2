@@ -8,14 +8,18 @@
 
 .program__item {
   background-color: $color-basic;
-}
 
-.program__item--slim {
-  //
-}
+  &--slim {
+    background-image: url("../../icons/stack.svg#cat-slim");
+    background-repeat: no-repeat;
+    background-size: 50px 53px;
+  }
 
-.program__item--pro {
-  //
+  &--pro {
+    background-image: url("../../icons/stack.svg#cat-pro");
+    background-repeat: no-repeat;
+    background-size: 67px 50px;
+  }
 }
 
 .program__title {
@@ -35,4 +39,14 @@
   font-size: 16px;
   line-height: 1;
   color: $color-text-accent;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 12px;
+    mask-image: url("../../icons/stack.svg#arrow");
+    mask-repeat: no-repeat;
+    background-color: $color-text-accent;
+  }
 }

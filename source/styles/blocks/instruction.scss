@@ -15,5 +15,39 @@
 }
 
 .instruction__item {
-  //
+  &--benefit::before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("../../icons/stack.svg#benefit-icon");
+    background-repeat: no-repeat;
+  }
+
+  &--cooking::before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/stack.svg#cooking-icon");
+  }
+
+  &--powder::before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/stack.svg#powder-icon");
+  }
+
+  &--time::before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/stack.svg#time-icon");
+  }
 }

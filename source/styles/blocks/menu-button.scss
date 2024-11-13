@@ -1,3 +1,23 @@
 .menu-button {
-  //
+  width: 24px;
+  height: 24px;
+  mask-image: url("../../icons/stack.svg#burger-menu");
+  mask-repeat: no-repeat;
+  mask-size: 24px 24px;
+  border: none;
+  background-color: $color-text-accent;
+  cursor: pointer;
+
+  &:hover,
+  :focus {
+    background-color: $color-logo-focus;
+  }
+
+  &:active {
+    background-color: $color-logo-active;
+  }
+
+  &--close {
+    mask-image: url("../../icons/stack.svg#close-button");
+  }
 }

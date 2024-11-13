@@ -1,9 +1,33 @@
 .developer {
   color: inherit;
   text-decoration: none;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#html-academy-icon");
+    mask-repeat: no-repeat;
+    background-color: $color-brand;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $color-accent;
+  }
+
+  &:active::before {
+    background-color: $color-accent;
+    opacity: 0.3;
+  }
 }
 
 .developer__title {
   font-size: 16px;
   line-height: 1.25;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
