@@ -1,6 +1,9 @@
 .developer {
   color: inherit;
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &::before {
     display: block;

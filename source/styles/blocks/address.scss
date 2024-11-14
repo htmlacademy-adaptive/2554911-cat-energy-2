@@ -1,9 +1,33 @@
 .address {
+  min-height: 400px;
   background-color: $color-light;
+
+  @media (min-width: $tablet-width) {
+    //
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+  }
+
+  &--dark {
+    background-color: $color-basic;
+  }
 }
 
-.address--dark {
-  background-color: $color-basic;
+.address__description {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    place-self: center center;
+    background-color: $color-light;
+    grid-column: 1/2;
+    order: 2;
+  }
 }
 
 .address__title {
@@ -20,5 +44,7 @@
 }
 
 .address__location {
-  //
+  @media (min-width: $desktop-width) {
+    grid-column: 1/3;
+  }
 }

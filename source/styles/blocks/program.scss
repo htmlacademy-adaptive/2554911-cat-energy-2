@@ -4,10 +4,26 @@
 
 .program__list {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 20px 0;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 
 .program__item {
   background-color: $color-basic;
+  display: flex;
+  flex-direction: column;
 
   &--slim {
     background-image: url("../../icons/stack.svg#cat-slim");

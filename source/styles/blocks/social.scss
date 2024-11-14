@@ -3,7 +3,19 @@
 }
 
 .social__list {
+  padding: 0;
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    //
+  }
+
+  @media (min-width: $desktop-width) {
+    //
+  }
 }
 
 .social__item {
