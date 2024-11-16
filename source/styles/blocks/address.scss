@@ -20,6 +20,11 @@
 .address__description {
   display: flex;
   justify-content: space-between;
+  padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 565px;
@@ -27,20 +32,46 @@
     background-color: $color-light;
     grid-column: 1/2;
     order: 2;
+    padding: 60px 80px;
   }
 }
 
 .address__title {
+  margin: 0;
   font-family: $font-second;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
   color: $color-text-accent-2;
+  width: 50%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .address__text {
+  margin: 0;
   line-height: 1.25;
+  width: 50%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: end;
+  }
+}
+
+.address__street {
+  margin: 0;
+}
+
+.address__city {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 17.5px;
+  }
 }
 
 .address__location {

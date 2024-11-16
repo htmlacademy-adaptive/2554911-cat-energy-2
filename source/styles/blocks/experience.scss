@@ -1,17 +1,28 @@
 .experience {
   background-color: $color-basic;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-light;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-basic;
+  }
 }
 
 .experience__container {
   display: flex;
   flex-direction: column;
+  padding-block: 25px 20px;
 
   @media (min-width: $tablet-width) {
-    //
+    padding-block: 45px 101px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
+    padding-block: 0 75px;
   }
 }
 
@@ -25,14 +36,35 @@
   font-size: 36px;
   line-height: 1;
   color: $color-text-accent;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-light;
+    padding-bottom: 76px;
+    box-shadow:
+      100vh 0 0 0 $color-light,
+      -100vh 0 0 0 $color-light;
+  }
 }
 
 .experience__text {
-  //
+  margin: 0;
+  padding-block: 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-block: 60px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-block: 70px 75px;
+    max-width: 450px;
+  }
 }
 
 .experience__data {
-  //
+  margin: 0;
+  display: grid;
+  gap: 32px;
 }
 
 .experience__data-parameter {
@@ -48,6 +80,7 @@
   line-height: 1;
   text-align: center;
   color: $color-text-accent;
+  margin: 0;
 }
 
 .experience__costs {
@@ -58,6 +91,7 @@
   text-transform: uppercase;
   text-align: center;
   color: $color-text-accent;
+  padding-top: 20px;
 }
 
 .experience__costs-title {

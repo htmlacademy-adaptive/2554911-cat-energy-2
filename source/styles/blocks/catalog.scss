@@ -10,8 +10,25 @@
   color: $color-text-accent;
 }
 
+.sub-product__container {
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto 245px;
+    display: grid;
+  }
+}
+
 .catalog__list {
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    display: grid;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .catalog__item {

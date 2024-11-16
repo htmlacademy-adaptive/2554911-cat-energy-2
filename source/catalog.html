@@ -17,20 +17,25 @@
   <header class="page__header">
     <div class="container">
       <nav class="navigation">
-        <a class="navigation__logo logo" href="./index.html">
-          <picture>
-            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59">
-            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50">
-            <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип сайта кэт энерджи">
-          </picture>
-        </a>
-        <a class="navigation__logo logo" href="index.html">
-          <picture>
-            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" width="118" height="21">
-            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18">
-            <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="20" alt="Текстовый логотип сайта кэт энерджи">
-          </picture>
-        </a>
+        <div class="navigation__header">
+          <a class="navigation__logo logo" href="./index.html">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50">
+              <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип сайта кэт энерджи">
+            </picture>
+          </a>
+          <a class="navigation__logo logo" href="index.html">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" width="118" height="21">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18">
+              <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="20" alt="Текстовый логотип сайта кэт энерджи">
+            </picture>
+          </a>
+          <button class="navigation__menu-button menu-button menu-button--close" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="./index.html">Главная</a>
@@ -42,9 +47,6 @@
             <a class="navigation__link" href="#">Подбор программы</a>
           </li>
         </ul>
-        <button class="navigation__menu-button menu-button menu-button--close" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </nav>
     </div>
   </header>
@@ -221,54 +223,55 @@
     <section class="sub-product">
       <div class="container">
         <h2 class="sub-product__title">Дополнительные товары</h2>
-        <ul class="sub-product__list">
-          <li class="sub-product__item sub-card">
-            <h3 class="sub-card__title">Сахарозаменитель</h3>
-            <dl class="sub-card__description">
-              <dt class="sub-card__parameter visually-hidden">Объем</dt>
-              <dd class="sub-card__value">1 упаковка (100&nbsp;г)</dd>
-              <dt class="sub-card__parameter visually-hidden">Цена</dt>
-              <dd class="sub-card__value">200&nbsp;₽</dd>
-            </dl>
-            <button class="button button--primary" type="button">Заказать</button>
-          </li>
-          <li class="sub-product__item sub-card">
-            <h3 class="sub-card__title">Питьевая вода</h3>
-            <dl class="sub-card__description">
-              <dt class="sub-card__parameter visually-hidden">Объем</dt>
-              <dd class="sub-card__value">5 литров</dd>
-              <dt class="sub-card__parameter visually-hidden">Цена</dt>
-              <dd class="sub-card__value">50&nbsp;₽</dd>
-            </dl>
-            <button class="button button--primary" type="button">Заказать</button>
-          </li>
-          <li class="sub-product__item sub-card">
-            <h3 class="sub-card__title">Молоко</h3>
-            <dl class="sub-card__description">
-              <dt class="sub-card__parameter visually-hidden">Объем</dt>
-              <dd class="sub-card__value">1 литр</dd>
-              <dt class="sub-card__parameter visually-hidden">Цена</dt>
-              <dd class="sub-card__value">100&nbsp;₽</dd>
-            </dl>
-            <button class="button button--primary" type="button">Заказать</button>
-          </li>
-          <li class="sub-product__item sub-card">
-            <h3 class="sub-card__title">Витамины</h3>
-            <dl class="sub-card__description">
-              <dt class="sub-card__parameter visually-hidden">Объем</dt>
-              <dd class="sub-card__value">1 упаковка (30&nbsp;г)</dd>
-              <dt class="sub-card__parameter visually-hidden">Цена</dt>
-              <dd class="sub-card__value">300&nbsp;₽</dd>
-            </dl>
-            <button class="button button--primary" type="button">Заказать</button>
-          </li>
-        </ul>
+        <div class="sub-product__container">
+          <ul class="sub-product__list">
+            <li class="sub-product__item sub-card">
+              <h3 class="sub-card__title">Сахарозаменитель</h3>
+              <dl class="sub-card__description">
+                <dt class="sub-card__parameter visually-hidden">Объем</dt>
+                <dd class="sub-card__value">1 упаковка (100&nbsp;г)</dd>
+                <dt class="sub-card__parameter visually-hidden">Цена</dt>
+                <dd class="sub-card__value">200&nbsp;₽</dd>
+              </dl>
+              <button class="button button--primary" type="button">Заказать</button>
+            </li>
+            <li class="sub-product__item sub-card">
+              <h3 class="sub-card__title">Питьевая вода</h3>
+              <dl class="sub-card__description">
+                <dt class="sub-card__parameter visually-hidden">Объем</dt>
+                <dd class="sub-card__value">5 литров</dd>
+                <dt class="sub-card__parameter visually-hidden">Цена</dt>
+                <dd class="sub-card__value">50&nbsp;₽</dd>
+              </dl>
+              <button class="button button--primary" type="button">Заказать</button>
+            </li>
+            <li class="sub-product__item sub-card">
+              <h3 class="sub-card__title">Молоко</h3>
+              <dl class="sub-card__description">
+                <dt class="sub-card__parameter visually-hidden">Объем</dt>
+                <dd class="sub-card__value">1 литр</dd>
+                <dt class="sub-card__parameter visually-hidden">Цена</dt>
+                <dd class="sub-card__value">100&nbsp;₽</dd>
+              </dl>
+              <button class="button button--primary" type="button">Заказать</button>
+            </li>
+            <li class="sub-product__item sub-card">
+              <h3 class="sub-card__title">Витамины</h3>
+              <dl class="sub-card__description">
+                <dt class="sub-card__parameter visually-hidden">Объем</dt>
+                <dd class="sub-card__value">1 упаковка (30&nbsp;г)</dd>
+                <dt class="sub-card__parameter visually-hidden">Цена</dt>
+                <dd class="sub-card__value">300&nbsp;₽</dd>
+              </dl>
+              <button class="button button--primary" type="button">Заказать</button>
+            </li>
+          </ul>
+          <div class="sub-product__gift gift">
+            <p class="gift__title">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
+        </div>
       </div>
-    </section>
-
-    <section class="gift">
-      <h2 class="gift__title">Закажите все и получите чехол для кота в подарок!</h2>
-    </section>
+    </section>/
     <section class="subscribe">
       <div class="container">
         <h2 class="subscribe__title">Акции и новинки</h2>
@@ -280,21 +283,21 @@
         </form>
       </div>
     </section>
+    <section class="address address--catalog">
+      <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="address__location location">
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x" width="1440" height="400">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x" width="768" height="400">
+          <img class="location__image" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" width="320" height="362" alt="Карта c локацией офиса">
+        </picture>
+      </div>
+    </section>
   </main>
 
   <footer class="page__footer">
-    <div class="container">
-      <section class="address address--catalog">
-        <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <div class="address__location location">
-          <picture>
-            <source type="image/png" media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x" width="1440" height="400">
-            <source type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x" width="768" height="400">
-            <img class="location__image" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" width="320" height="362" alt="Карта c локацией офиса">
-          </picture>
-        </div>
-      </section>
+    <div class="footer__container container">
       <a class="logo" href="./index.html">
         <img class="logo__text" src="images/logo-text-mobile.svg" alt="Логотип сайта" width="128" height="24">
       </a>

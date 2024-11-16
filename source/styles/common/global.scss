@@ -10,4 +10,17 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0 auto;
+  padding: 0;
 }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img {
+  height: auto;
+  object-fit: contain;
+}
+

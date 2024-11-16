@@ -4,8 +4,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 
-  &::before {
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    align-content: end;
+  }
+
+  &::after {
     display: block;
     content: "";
     width: 27px;
@@ -15,12 +21,12 @@
     background-color: $color-brand;
   }
 
-  &:hover::before,
-  &:focus::before {
+  &:hover::after,
+  &:focus::after {
     background-color: $color-accent;
   }
 
-  &:active::before {
+  &:active::after {
     background-color: $color-accent;
     opacity: 0.3;
   }

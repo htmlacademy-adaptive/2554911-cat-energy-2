@@ -1,7 +1,10 @@
 .demo {
-  //
+  display: grid;
+  grid-template-columns: 560px;
+  grid-row: 512px;
 }
 
-.demo__imag {
-  //
+.demo__image {
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
