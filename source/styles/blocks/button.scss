@@ -6,14 +6,33 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
 }
 
 .button--primary {
   color: $color-light;
   background-color: $color-accent;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent-hover;
+  }
+
+  &:active {
+    background-color: $color-accent-hover;
+    color: $color-light-active;
+  }
 }
 
 .button--secondary {
   color: $color-text-base;
   background-color: $color-basic;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color-line-decor-light;
+  }
 }

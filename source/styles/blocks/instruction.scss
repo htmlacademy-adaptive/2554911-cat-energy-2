@@ -1,5 +1,13 @@
 .instruction {
-  //
+  padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 50px;
+  }
 }
 
 .instruction__title {
@@ -8,46 +16,121 @@
   font-size: 36px;
   line-height: 1;
   color: $color-text-accent;
+  margin: 0;
+  padding-block: 5px 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    padding-block: 25px 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-block: 51px 32px;
+  }
 }
 
 .instruction__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+
+  counter-reset: item;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    justify-content: start;
+    gap: 37px 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 
 .instruction__item {
-  &--benefit::before {
-    display: block;
-    content: "";
-    width: 60px;
-    height: 60px;
-    background-image: url("../../icons/stack.svg#benefit-icon");
-    background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  counter-increment: item;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    min-height: 280px;
+    display: grid;
+    grid-template-columns: 115px 135px;
+    grid-template-rows: 151px 1fr;
   }
 
-  &--cooking::before {
-    display: block;
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+
+  &::after {
     content: "";
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      margin-top: 10px;
+      border: 10px solid $color-accent;
+      box-sizing: content-box;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 5px;
+    }
+  }
+
+  &--benefit::after {
+    background-image: url("../../icons/stack.svg#benefit-icon");
+  }
+
+  &--cooking::after {
     background-image: url("../../icons/stack.svg#cooking-icon");
   }
 
-  &--powder::before {
-    display: block;
-    content: "";
-    width: 60px;
-    height: 60px;
-    background-repeat: no-repeat;
+  &--powder::after {
     background-image: url("../../icons/stack.svg#powder-icon");
   }
 
-  &--time::before {
-    display: block;
-    content: "";
-    width: 60px;
-    height: 60px;
-    background-repeat: no-repeat;
+  &--time::after {
     background-image: url("../../icons/stack.svg#time-icon");
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: counter(item);
+      color: $color-basic;
+      font-family: $font-second;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 1;
+      text-align: start;
+      grid-column: 2/3;
+      grid-row: 1/-1;
+    }
+  }
+}
+
+.instruction__text {
+  width: 200px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    align-self: start;
+    width: 245px;
+    grid-column: 1/-1;
+    grid-row: 2/3;
   }
 }
