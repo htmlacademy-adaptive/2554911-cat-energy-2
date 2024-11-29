@@ -88,6 +88,7 @@
 .navigation--nojs .navigation__list {
   position: static;
   display: flex;
+  border-top: solid 1px $color-border;
 }
 
 .navigation__item {
@@ -120,6 +121,12 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (max-width: $before-tablet-width) {
+    width: 100vw;
+    text-align: center;
+    border-bottom: solid 1px $color-border;
   }
 
   @media (min-width: $tablet-width) {
@@ -185,6 +192,10 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.navigation--nojs .navigation__menu-button {
+  display: none;
 }
 
 .navigation--open .navigation__menu-button {

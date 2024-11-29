@@ -88,6 +88,7 @@
     text-align: center;
     font-size: 20px;
     line-height: 1.2;
+    flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -128,7 +129,6 @@
     font-size: 16px;
     line-height: 1.25;
     gap: 10px;
-    flex-grow: 1;
     grid-template-columns: repeat(2, 120px);
     grid-template-rows: 20px;
     padding-bottom: 40px;

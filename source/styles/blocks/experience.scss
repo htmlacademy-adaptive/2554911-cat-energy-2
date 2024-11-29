@@ -69,10 +69,11 @@
   display: flex;
   flex-wrap: wrap;
   width: 280px;
+  align-items: start;
+
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
