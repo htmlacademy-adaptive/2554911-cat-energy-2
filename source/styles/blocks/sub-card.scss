@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   padding-block: 13px;
-  border-block: 1px solid $color-border;
+  border-top: 1px solid $color-border;
   align-items: center;
 
   &:last-child {
