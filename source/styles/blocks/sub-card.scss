@@ -1,0 +1,118 @@
+.sub-card {
+  display: flex;
+  flex-direction: column;
+  padding-block: 13px;
+  border-top: 1px solid $color-border;
+  align-items: center;
+
+  &:last-child {
+    border-bottom: 1px solid $color-border;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0;
+    min-height: 72px;
+  }
+}
+
+.sub-card__title {
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $color-text-base-2;
+  margin: 0;
+  padding-bottom: 15px;
+  text-align: start;
+  align-self: start;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-bottom: 25px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    width: 324px;
+    padding-right: 24px;
+    padding-block: 0;
+    align-self: center;
+  }
+}
+
+.sub-card__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.25;
+    padding-bottom: 21px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-content: end;
+    padding-right: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 0;
+    width: 325px;
+    padding-top: 5px;
+    align-self: center;
+  }
+}
+
+.sub-card__parameter {
+  margin: 0;
+  padding: 0;
+  text-align: start;
+}
+
+.sub-card__value {
+  margin: 0;
+  padding: 0;
+  text-align: end;
+
+  @media (min-width: $tablet-width) {
+    min-width: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    min-width: 82px;
+    padding-right: 12px;
+  }
+}
+
+.sub-card_button {
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    min-width: 632px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 244px;
+  }
+}

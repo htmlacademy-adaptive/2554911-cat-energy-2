@@ -1,7 +1,32 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/container.scss";
+@import "./blocks/button.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/program.scss";
+@import "./blocks/instruction.scss";
+@import "./blocks/experience.scss";
+@import "./blocks/demo.scss";
+@import "./blocks/address.scss";
+@import "./blocks/location.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/developer.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/card.scss";
+@import "./blocks/item-more.scss";
+@import "./blocks/sub-product.scss";
+@import "./blocks/sub-card.scss";
+@import "./blocks/gift.scss";
+@import "./blocks/subscribe.scss";
+@import "./blocks/form.scss";
+@import "./blocks/input.scss";
