@@ -144,6 +144,7 @@
 .hero__button {
   display: block;
   padding: 10px 64px;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
