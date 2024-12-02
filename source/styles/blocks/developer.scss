@@ -6,6 +6,8 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  font-size: 16px;
+  line-height: 1.25;
 
   @media (min-width: $tablet-width) {
     width: 163px;
@@ -28,17 +30,8 @@
     background-color: $color-accent;
   }
 
-  &:active::after {
-    background-color: $color-accent;
-    opacity: 0.3;
-  }
-}
-
-.developer__title {
-  font-size: 16px;
-  line-height: 1.25;
-
   &:active {
     opacity: 0.3;
   }
 }
+
